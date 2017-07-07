@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SEARCH_TABS} from "./search-tabs";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  tabs : any;
+  constructor(){this.tabs = SEARCH_TABS}
 }

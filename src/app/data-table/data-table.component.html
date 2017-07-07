@@ -1,0 +1,70 @@
+<md-card class="search-card zero-top-padding">
+    <ng2-md-datatable selectable="false">
+        <ng2-md-datatable-header>
+            <ng2-md-datatable-column sortableValue="create">Created</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="guid">GUID</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="firstname">First Name</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="lastname">Last Name</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="type">Type</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="address">Address</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="city">City</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="state">State</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="postalcode">Postal Code</ng2-md-datatable-column>
+            <ng2-md-datatable-column sortableValue="email">Email</ng2-md-datatable-column>
+        </ng2-md-datatable-header>
+        <tbody>
+            <ng2-md-datatable-row selectableValue="K003-0350-001">
+                <td>06/06/2013 22:33:00</td>
+                <td>adfa-sd98sd-sdfs89-sdfsf</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td></td>
+                <td>2200 Way</td>
+                <td>Sterling</td>
+                <td>VA</td>
+                <td>20166</td>
+                <td>tese@gmail.com</td>
+            </ng2-md-datatable-row>
+            <ng2-md-datatable-row selectableValue="K003-0350-002">
+                <td>06/06/2013 22:33:00</td>
+                <td>adfa-sd98sd-sdfs89-sdfsf</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td></td>
+                <td>2200 Way</td>
+                <td>Sterling</td>
+                <td>VA</td>
+                <td>20166</td>
+                <td>tese@gmail.com</td>
+            </ng2-md-datatable-row>
+            <ng2-md-datatable-row selectableValue="K003-0350-003">
+                <td>06/06/2013 22:33:00</td>
+                <td>adfa-sd98sd-sdfs89-sdfsf</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td></td>
+                <td>2200 Way</td>
+                <td>Sterling</td>
+                <td>VA</td>
+                <td>20166</td>
+                <td>tese@gmail.com</td>
+            </ng2-md-datatable-row>
+            <ng2-md-datatable-row selectableValue="K003-0350-004">
+                <td>06/06/2013 22:33:00</td>
+                <td>adfa-sd98sd-sdfs89-sdfsf</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td></td>
+                <td>2200 Way</td>
+                <td>Sterling</td>
+                <td>VA</td>
+                <td>20166</td>
+                <td>tese@gmail.com</td>
+            </ng2-md-datatable-row>
+        </tbody>
+    </ng2-md-datatable>
+
+    <ng2-md-datatable-pagination [currentPage]="1" [itemsPerPage]="5" [itemsCount]="700" [itemsPerPageChoices]="[5,10,20,50]"
+        [itemsPerPageFirstChoice]="10" [needShowFirstArrow]="true" [needShowLastArrow]="true" ofText="of" rowsPerPageText="Rows per page:">
+    </ng2-md-datatable-pagination>
+</md-card>

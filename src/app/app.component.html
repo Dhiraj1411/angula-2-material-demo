@@ -1,3 +1,50 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container class="example-container">
+
+  <md-sidenav #sidenav class="example-sidenav">
+    <md-icon class="material-icons">&#xE88A;</md-icon><br><br>
+    <md-icon class="material-icons">&#xE7FD;</md-icon><br>
+    <md-icon class="material-icons nav-stor">&#xE8D1;</md-icon><br>
+    <md-icon class="material-icons nav-set">&#xE8B8;</md-icon><br>
+    <md-icon class="material-icons nav-des">&#xE873;</md-icon><br>
+    <md-icon class="material-icons logout-icon">&#xE879;</md-icon>
+  </md-sidenav>
+
+  <md-card class="toll-bar-md-card">
+    <md-toolbar>
+      <md-icon class="material-icons" (click)="sidenav.open()">&#xE8EE;</md-icon>
+      <label class="example-icon">OBI<br>mCare</label>
+      <span class="example-spacer"></span>
+      <span class="small-font">Welcome Kevinga (testobi)</span>
+      <span class="vertical-divider-header-icon">|</span>
+      <md-select placeholder="" [(ngModel)]="country">
+        <md-option *ngFor="let code of countryCode" [value]="code.value">
+          {{ code.viewValue }}
+        </md-option>
+      </md-select>
+      <span class="vertical-divider-header-icon">|</span>
+      <md-select [ngModel]="font">
+        <md-option *ngFor="let code of fontList" [value]="code.value">
+          {{ code.viewValue }}
+        </md-option>
+      </md-select>
+      <span class="vertical-divider-header-icon">|</span>
+      <md-icon class="example-icon">&#xE879;</md-icon><span class="small-font">Logout</span>
+    </md-toolbar>
+  </md-card>
+  
+  <md-card class="search-card">
+    <label class="search-content">Find Customer</label>
+    <hr class="search-hr">
+    <md-tab-group>
+      <md-tab *ngFor="let tab of tabs;" [label]='tab.title'>
+        <md-input-container class="search-content" *ngFor="let field of tab.fields">
+          <input mdInput [placeholder]="field.label">
+        </md-input-container>
+      </md-tab>
+    </md-tab-group>
+  </md-card>
+
+ <!-- Data-table Component -->
+  <data-table></data-table>
+
+</md-sidenav-container>
