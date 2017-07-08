@@ -12,19 +12,19 @@
   <md-card class="toll-bar-md-card">
     <md-toolbar>
       <md-icon class="material-icons" (click)="sidenav.open()">&#xE8EE;</md-icon>
-      <label class="example-icon">OBI<br>mCare</label>
+      <label class="example-icon">HOME</label>
       <span class="example-spacer"></span>
-      <span class="small-font">Welcome Kevinga (testobi)</span>
+      <span class="small-font">Welcome User</span>
       <span class="vertical-divider-header-icon">|</span>
       <md-select placeholder="" [(ngModel)]="country">
-        <md-option *ngFor="let code of countryCode" [value]="code.value">
-          {{ code.viewValue }}
+        <md-option *ngFor="let code of countryCode" [value]="code">
+          {{ code }}
         </md-option>
       </md-select>
       <span class="vertical-divider-header-icon">|</span>
       <md-select [ngModel]="font">
-        <md-option *ngFor="let code of fontList" [value]="code.value">
-          {{ code.viewValue }}
+        <md-option *ngFor="let code of fontList" [value]="code">
+          {{ code }}
         </md-option>
       </md-select>
       <span class="vertical-divider-header-icon">|</span>

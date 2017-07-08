@@ -8,5 +8,7 @@ import {SEARCH_TABS} from "./search-tabs";
 })
 export class AppComponent {
   tabs : any;
+  fontList: number[]= [10, 12, 13, 14, 15];
+  countryCode = ['EST', 'GMT', 'PST'];
   constructor(){this.tabs = SEARCH_TABS}
 }
