@@ -12,8 +12,8 @@
     "dist": "ng build -prod"
   },
   "engines": {
-    "node": "5.9.1",
-    "npm": "3.7.3"
+    "node": "7.2.0",
+    "npm": "4.0.3"
   },
   "private": true,
   "dependencies": {
